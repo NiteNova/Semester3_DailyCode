@@ -6,7 +6,7 @@ int cases;
 char input;
 bool leftDelimiter = false;
 bool rightDelimiter = false;
-stack <int> myStack;
+stack <char> myStack;
 
 int main() {
 	cin >> cases; 
@@ -37,6 +37,11 @@ int main() {
 			rightDelimiter = true;
 		}
 	}
-	myStack.size();
-	myStack.top();
+	cout << "\n";
+	if (myStack.size() > 0) {
+		cout << "The size is: " << myStack.size() << '\n';
+		cout << "The top is: " << myStack.top() << '\n';
+	}
+	else
+		cout << "The number of parantheses, braces, and curly braces are 'balanced'\n";
 }
